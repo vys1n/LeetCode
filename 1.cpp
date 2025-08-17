@@ -22,6 +22,7 @@ public:
 };
 
 
+// Optimized Solution
 // TC - O(n)
 // SC - O(n)
 /* vector<int> twoSum(vector<int>& nums, int target){
