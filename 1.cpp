@@ -1,8 +1,5 @@
-// Two Sum
-
-#include <iostream>
-#include <unordered_map>
 #include <vector>
+#include <unordered_map>
 using namespace std;
 
 class Solution {
