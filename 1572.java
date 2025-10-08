@@ -29,7 +29,7 @@ class diagonalSum {
         int n = mat.length;
         for (int i=0; i<n; i++) {
             sum += mat[i][i];
-            int j = mat.length - 1 - i;
+            int j = mat.length-1-i;
             if (i != j)
                 sum += mat[i][j];
         }
