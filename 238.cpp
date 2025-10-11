@@ -57,8 +57,8 @@ public:
 
 Time & Space Complexity
 
-    Time complexity: O(n)O(n)
-    Space complexity: O(n)O(n)
+    Time complexity: O(n)
+    Space complexity: O(n)
 */
 
 /* Prefix & Suffix (Optimal)
@@ -84,8 +84,8 @@ public:
 
 Time & Space Complexity
 
-    Time complexity: O(n)O(n)
+    Time complexity: O(n)
     Space complexity:
-        O(1)O(1) extra space.
-        O(n)O(n) space for the output array.
+        O(1) extra space.
+        O(n) space for the output array.
 */
