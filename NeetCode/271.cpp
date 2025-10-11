@@ -4,7 +4,6 @@ using namespace std;
 
 class Solution {
 public:
-
     string encode(vector<string>& strs) {
         string full;
         for (auto& word : strs) {
