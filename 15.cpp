@@ -24,7 +24,6 @@ public:
                 } else {
                     res.push_back({nums[i], nums[j], nums[k]});
                     j++;
-                    k--;
                     while (j<k && nums[j] == nums[j-1])
                         j++;
                 }
