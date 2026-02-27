@@ -4,12 +4,17 @@ using namespace std;
 
 class MinStack {
 public:
-    stack<int> st;
+    stack<pair<int,int>> st;
     int minimum = INT_MAX;
     MinStack() {}
     
     void push(int val) {
-        st.push(val); 
+        if (st.empty()) {
+            st.push({val,val});
+        } else {
+            minimum = min(val, st.top().second);
+            st.push({val, minimum});
+        }
     }
     
     void pop() {
@@ -17,25 +22,11 @@ public:
     }
     
     int top() {
-        return st.top(); 
+        return st.top().first; 
     }
     
     int getMin() {
-        stack<int> tmp;
-        int minimum = st.top();
-
-        while(st.size()){
-            minimum = min(minimum, st.top());
-            tmp.push(st.top());
-            st.pop();
-        }
-
-        while(tmp.size()){
-            st.push(tmp.top());
-            tmp.pop();
-        }
-
-        return minimum;
+        return st.top().second;
     }
 };
 
