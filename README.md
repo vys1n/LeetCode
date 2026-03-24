@@ -1,1 +1,1 @@
-# My LeetCode Solutions from Uni
+# My LeetCode Solutions
