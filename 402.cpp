@@ -26,4 +26,25 @@ public:
         string res = st.substr(i);
         return res.empty() ? "0" : res;
     }
+
+private:
+    string twoPointersRemoveKdigits(string num, int k) {
+        int l = 0;
+        for (int r=0; r < num.size(); r++) {
+            while (l>0 && k>0 && num[l-1] > num[r]) {
+                l--;
+                k--;
+            }
+            
+            num[l++] = num[r];
+        }
+
+        l -= k;
+        int i = 0;
+        while (i<l && num[i] == '0')
+            i++;
+
+        if (i == l) return "0";
+        return num.substr(i, l-i);
+    }
 };
